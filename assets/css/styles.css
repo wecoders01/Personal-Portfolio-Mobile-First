@@ -316,6 +316,21 @@ img {
 .button-light {
 	background-color: var(--first-color-light);
 }
+.button-white {
+	background-color: var(--first-color-lighten);
+	color: var(--first-color-dark);
+}
+.button-white:hover {
+	background-color: var(--first-color-lighten);
+}
+.button-link {
+	background: none;
+	color: var(--first-color);
+	padding: 0;
+}
+.button-link:hover {
+	background: none;
+}
 
 /*===== ABOUT =====*/
 .about_data {
@@ -372,16 +387,102 @@ img {
 }
 
 /*===== SERVICES =====*/
+.services_data {
+	padding: 3rem 1rem;
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	text-align: center;
+	transition: 0.4s;
+	box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+}
+.services_icon,
+.services_title {
+	margin-bottom: var(--mb-2);
+	color: var(--first-color);
+}
+.services_icon {
+	font-size: 3rem;
+}
+.services_title {
+	font-size: var(--h3-font-size);
+}
+.services_description {
+	margin-bottom: var(--mb-4);
+}
+.services_data:hover {
+	transform: translateY(-0.5rem);
+	box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
 
 /*===== PROJECT IN MIND =====*/
+.project_container {
+	padding: 1.5rem 1rem;
+	background-color: var(--first-color-dark);
+	color: var(--first-color-lighten);
+	border-radius: 0.5rem;
+	text-align: center;
+}
+.project_icon,
+.project_title {
+	margin-bottom: var(--mb-1);
+}
+.project_icon {
+	font-size: 3.5rem;
+}
+.project_title {
+	font-size: 1.5rem;
+}
+.project_description {
+	margin-bottom: var(--mb-4);
+}
 
 /*===== PORTFOLIO =====*/
+.portfolio_nav {
+	text-align: center;
+	margin-bottom: var(--mb-3);
+}
+.portfolio_item {
+	margin: 0 var(--mb-2);
+	cursor: pointer;
+}
+.portfolio_content {
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+}
+.portfolio_img {
+	width: 100%;
+	transition: 0.4s;
+}
+.portfolio_data {
+	padding: 1.5rem;
+}
+.portfolio_subtitle {
+	font-size: var(--small-font-size);
+	color: var(--first-color-light);
+}
+.portfolio_title {
+	font-size: var(--h3-font-size);
+	color: var(--first-color);
+	margin: var(--mb-2) 0;
+}
+.portfolio_content:hover {
+	box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
+.portfolio_content:hover .portfolio_img {
+	transform: scale(1.02);
+}
 
 /* Active menu portfolio*/
+.active-portfolio {
+	color: var(--first-color-dark);
+	font-weight: var(--font-semi-bold);
+}
 
 /*===== TESTIMONIAL =====*/
 
-/*===== CONTACTME =====*/
+/*===== CONTACT ME =====*/
 
 /*===== FOOTER =====*/
 
