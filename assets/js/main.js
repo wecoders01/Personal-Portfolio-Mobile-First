@@ -35,7 +35,6 @@ function scrollActive(){
          document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
       }else{
          document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
-
       }
    })
 }
@@ -76,8 +75,32 @@ function activePortfolio(){
 linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
 
 /*===== SWIPER CAROUSEL =====*/ 
+const mySwiper = new Swiper('.testimonial_container', {
+   spaceBetween: 16,
+   loop: true,
+   grabCursor: true,
+ 
+   pagination: {
+     el: '.swiper-pagination',
+     clickable: true,
+   },
+   breakpoints:{
+      640:{
+         slidesPerView: 2,
+      },
+      1024:{
+         slidesPerView: 3,
+      },
+   }
+ })
 
 
 /*===== GSAP ANIMATION =====*/ 
+gsap.from(".home_img", {opacity: 0, duration: 2, delay: .5, x:60})
+gsap.from(".home_data", {opacity: 0, duration: 2, delay: .8, y:25})
+gsap.from(".home_greeting, .home_name, .home_profession, .home_button", {opacity: 0, duration: 2, delay: 1, y:25, ease:'expo.out', stagger: .2})
+gsap.from(".nav_logo, .nav_toggle", {opacity: 0, duration: 2, delay: 1.5, y:25, ease:'expo.out', stagger: .2})
+gsap.from(".nav_item", {opacity: 0, duration: 2, delay: 1.8, y:25, ease:'expo.out', stagger: .2})
+gsap.from(".home_social_icon", {opacity: 0, duration: 2, delay: 2.3, y:25, ease:'expo.out', stagger: .2})
 
 
